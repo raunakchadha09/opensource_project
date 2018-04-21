@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>RAUNAK-SET5-Q2</title>
+<body>
+<h1><strong>Answer to question 2</h1>
+<h2>Set 5</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+
+int main(int argc, char const *argv[]) {
+  int ch;
+  printf("The program works for the following range of inputs: \n");
+  printf("48-57, 65-90, 97-122 \n");
+  printf("Enter a number: ");
+  scanf("%d", &ch);
+  if (ch >= 0 && ch < 128) {
+    printf("%c \n", ch);
+  }
+  return 0;
+}
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+
+print("The program works for the following range of inputs : \n")
+print("48-57, 65-90, 97-122 \n")
+ch=int(input("\nEnter the number from the range above - "))
+flag=0
+while flag!=1:
+  if 47<ch<58 or 64<ch<91 or 96<ch<123:
+    print("\n\tThe character for the given ASCII value is -> %s"%(chr(ch)))
+    flag=1
+  else:
+    ch=int(input("Please enter a value from the given range only! -> "))
+    flag=0 
+</strong>
+</pre>
+</body>
+</head>
+</html>

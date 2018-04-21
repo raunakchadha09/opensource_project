@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>RAUNAK-SET2-Q2</title>
+<body>
+<h1><strong>Answer to question 1</h1>
+<h2>Set 2</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+int main() {
+  int rows, i, j, space;
+
+  printf("Enter number of rows: ");
+  scanf("%d", &rows);
+
+  for (i = rows; i >= 1; --i) {
+    for (space = 0; space < rows - i; ++space)
+      printf("  ");
+
+    for (j = i; j <= 2 * i - 1; ++j)
+      printf("* ");
+
+    for (j = 0; j < i - 1; ++j)
+      printf("* ");
+
+    printf("\n");
+  }
+
+  return 0;
+}
+
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+
+rows=int(input("Enter number of rows : "))
+space=0
+for i in range(rows,0,-1):
+  for j in range(space,rows-i):
+    print("  ",end="")
+  for k in range(i,2*i):
+    print("* ",end="")
+  for l in range(0,i-1):
+    print("* ",end="")
+  print("")
+
+</strong>
+</pre>
+</body>
+</head>
+</html>
+
