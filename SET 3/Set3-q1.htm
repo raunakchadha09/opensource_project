@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>RAUNAK-SET3-Q1</title>
+<body>
+<h1><strong>Answer to question 1</h1>
+<h2>Set 3</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+int main() {
+  int i, space, rows, k = 0, count = 0, count1 = 0;
+
+  printf("Enter number of rows: ");
+  scanf("%d", &rows);
+
+  for (i = 1; i <= rows; ++i) {
+    for (space = 1; space <= rows - i; ++space) {
+      printf("  ");
+      ++count;
+    }
+
+    while (k != 2 * i - 1) {
+      if (count <= rows - 1) {
+        printf("%d ", i + k);
+        ++count;
+      } else {
+        ++count1;
+        printf("%d ", (i + k - 2 * count1));
+      }
+      ++k;
+    }
+    count1 = count = k = 0;
+
+    printf("\n");
+  }
+  return 0;
+}
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+k=0;count=0;count1=0;space=1
+rows=int(input("Enter number of rows : "))
+for i in range(1,rows+1):
+  for j in range(space,rows-i+1):
+    print("  ",end="")
+    count+=1
+  while k!=2*i-1:
+    if count<=rows-1:
+      print("%d "%(i+k),end="")
+      count+=1
+    else:
+      count1+=1
+      print("%d "%(i+k-2*count1),end="")
+    k+=1
+  count1=0;count=0;k=0
+  print("")
+
+</strong>
+</pre>
+</body>
+</head>
+</html>
+

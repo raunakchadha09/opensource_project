@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>RAUNAK-SET5-Q1</title>
+<body>
+<h1><strong>Answer to question 1</h1>
+<h2>Set 5</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include <stdio.h>
+int main() {
+  int n, reversedInteger = 0, remainder, originalInteger;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+
+  originalInteger = n;
+
+  while (n != 0) {
+    remainder = n % 10;
+    reversedInteger = reversedInteger * 10 + remainder;
+    n /= 10;
+  }
+
+  if (originalInteger == reversedInteger)
+    printf("%d: Yes. \n", originalInteger);
+  else
+    printf("%d: No. \n", originalInteger);
+
+  return 0;
+}
+
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+
+reversedInteger=0
+n=int(input("Enter an integer : "))
+originalInteger=n
+while n!=0:
+  remainder=n%10
+  reversedInteger=reversedInteger*10+remainder
+  n//=10
+if originalInteger==reversedInteger:
+  print("%d: Yes. It's a palindrome number\n"%originalInteger)
+else:
+  print("%d: No. It's not a palindrome number\n"%originalInteger)
+</strong>
+</pre>
+</body>
+</head>
+</html>

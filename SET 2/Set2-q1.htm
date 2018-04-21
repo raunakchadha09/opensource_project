@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>RAUNAK-SET2-Q1</title>
+<body>
+<h1><strong>Answer to question 1</h1>
+<h2>Set 2</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+int main() {
+  int n1 = 0, n2 = 1, n3, i, number;
+  printf("Enter the number of elements:");
+  scanf("%d", &number);
+  printf("\n%d %d", n1, n2);
+  for (i = 2; i < number; ++i) {
+    n3 = n1 + n2;
+    printf(" %d", n3);
+    n1 = n2;
+    n2 = n3;
+  }
+  return 0;
+}
+
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+n1=0
+n2=1
+number=int(input("Enter the number of elements - "))
+print (n1,n2," \n",end="")
+for i in range(2,number):
+  n3=n1+n2
+  print (n3)
+  n1=n2
+  n2=n3
+
+</strong>
+</pre>
+</body>
+</head>
+</html>
+
