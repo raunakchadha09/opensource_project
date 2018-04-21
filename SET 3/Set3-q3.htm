@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>RAUNAK-SET3-Q2</title>
+<body>
+<h1><strong>Answer to question 3</h1>
+<h2>Set 3</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+  #include &lt;stdio.h&gt;
+int main() {
+  int n, reversedNumber = 0, remainder;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+
+  while (n != 0) {
+    remainder = n % 10;
+    reversedNumber = reversedNumber * 10 + remainder;
+    n /= 10;
+  }
+
+  printf("Reversed Number = %d", reversedNumber);
+
+  return 0;
+}
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+
+reversedNumber=0
+n=int(input("\nEnter an integer : "))
+while n!=0:
+  remainder=n%10
+  reversedNumber=reversedNumber*10+remainder
+  n//=10
+print("Reversed Number  : %d\n"%reversedNumber)  
+
+
+</strong>
+</pre>
+</body>
+</head>
+</html>

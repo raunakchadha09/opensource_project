@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>RAUNAK-SET5-Q3</title>
+<body>
+<h1><strong>Answer to question 3</h1>
+<h2>Set 5</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+
+int main() {
+  int i, j, rows;
+  int stars, spaces;
+
+  printf("Enter rows to print : ");
+  scanf("%d", &rows);
+
+  stars = 1;
+  spaces = rows - 1;
+
+  for (i = 1; i < rows * 2; i++) {
+    /* Print spaces */
+    for (j = 1; j <= spaces; j++)
+      printf(" ");
+
+    for (j = 1; j < stars * 2; j++)
+      printf("*");
+
+    printf("\n");
+
+    if (i < rows) {
+      spaces--;
+      stars++;
+    } else {
+      spaces++;
+      stars--;
+    }
+  }
+
+  return 0;
+}
+
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">	
+rows=int(input("Enter rows to print : "))
+stars=1; spaces=rows-1;
+for i in range(1,rows*2):
+  for j in range(1,spaces+1):
+    print (" ",end="")
+  for j in range(1,stars*2):
+    print ("*",end="")
+  print ("")
+  if (i<rows):
+    spaces-=1
+    stars+=1
+  else:
+    spaces+=1
+    stars-=1
+</strong>
+</pre>
+</body>
+</head>
+</html>

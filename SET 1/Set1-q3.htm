@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>RAUNAK-SET1-Q1</title>
+<body>
+<h1><strong>Answer to question 3</h1>
+<h2>Set 1</h2>
+<h4>The C code is:</h4>
+<pre style="background-color:#D3D3D3">	
+#include &lt;stdio.h&gt;
+int main() 
+{
+  long long n;
+  int count = 0;
+
+  printf("Enter an integer: ");
+  scanf("%lld", &n);
+
+  while (n != 0) {
+    // n = n/10
+    n /= 10;
+    ++count;
+  }
+  printf("The count: %d\n", count);
+  return 0;
+}
+
+}
+<br>
+</pre>
+<h4>The python code is:</h4>
+<pre style="background-color:#D3D3D3">  
+count=0
+n=int(input("Enter any number - "))
+while n!=0:
+  n//=10
+  count+=1
+print ("The count - %d"%count)
+</strong>
+</pre>
+</body>
+</head>
+</html>
+
